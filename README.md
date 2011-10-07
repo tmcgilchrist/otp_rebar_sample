@@ -62,7 +62,9 @@ A simple OTP application generated using rebar.
     >{ok,<0.54.0>}
     >
     >(mysample@127.0.0.1)3> mysample_server:say_hello().
+    >
     >Hello from server!
+    >
     >ok
 
 ### Resources:
