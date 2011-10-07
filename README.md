@@ -47,17 +47,17 @@ A simple OTP application generated using rebar.
 
 6. Check everything works
 
-   >(mysample@127.0.0.1)1> application:which_applications().
-   >
-   >[{mysample_app,[],[]},
-   >
-   >{sasl,"SASL  CXC 138 11","2.1.9.4"},
-   >
-   >{stdlib,"ERTS  CXC 138 10","1.17.4"},
-   >
-   >{kernel,"ERTS  CXC 138 10","2.14.4"}]
-   >
-   >(mysample@127.0.0.1)2> mysample_server:say_hello().
+    >(mysample@127.0.0.1)1> application:which_applications().
+    >
+    >[{mysample_app,[],[]},
+    >
+    >{sasl,"SASL  CXC 138 11","2.1.9.4"},
+    >
+    >{stdlib,"ERTS  CXC 138 10","1.17.4"},
+    >
+    >{kernel,"ERTS  CXC 138 10","2.14.4"}]
+    >
+    >(mysample@127.0.0.1)2> mysample_server:say_hello().
 
 
 ### Resources:
