@@ -57,8 +57,13 @@ A simple OTP application generated using rebar.
     >
     >{kernel,"ERTS  CXC 138 10","2.14.4"}]
     >
-    >(mysample@127.0.0.1)2> mysample_server:say_hello().
-
+    >(mysample@127.0.0.1)2> mysample_server:start_link().
+    >
+    >{ok,<0.54.0>}
+    >
+    >(mysample@127.0.0.1)3> mysample_server:say_hello().
+    >Hello from server!
+    >ok
 
 ### Resources:
 Some useful resources for understanding Rebar:
