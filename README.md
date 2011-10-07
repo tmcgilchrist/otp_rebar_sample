@@ -8,13 +8,19 @@ A simple OTP application generated using rebar.
 
 2. Compile the SampleApp
 
-    $ rebar compile
-    ==> mysample_app (compile)
-    Compiled src/mysample_app.erl
-    Compiled src/mysample_sup.erl
-    Compiled src/mysample_server.erl
-    ==> rel (compile)
-    ==> otp_rebar_sample (compile)
+    >$ rebar compile
+    >
+    >==> mysample_app (compile)
+    >
+    >Compiled src/mysample_app.erl
+    >
+    >Compiled src/mysample_sup.erl
+    >
+    >Compiled src/mysample_server.erl
+    >
+    >==> rel (compile)
+    >
+    >==> otp_rebar_sample (compile)
 
 3. Create a rebar release
 
@@ -23,25 +29,35 @@ A simple OTP application generated using rebar.
 
 4. Make the application executable
 
-    $ chmod u+x rel/mysample/bin/mysample
-    $ ./rel/mysample/bin/mysample
-    Usage: mysample {start|stop|restart|reboot|ping|console|attach}
+    >$ chmod u+x rel/mysample/bin/mysample
+    >
+    >$ ./rel/mysample/bin/mysample
+    >
+    >Usage: mysample {start|stop|restart|reboot|ping|console|attach}
 
 5. Startup the application
 
-    $ ./rel/mysample/bin/mysample console
-    ...
-    Eshell V5.8.4  (abort with ^G)
-    (mysample@127.0.0.1)1>
+    >$ ./rel/mysample/bin/mysample console
+    >
+    >...
+    >
+    >Eshell V5.8.4  (abort with ^G)
+    >
+    > (mysample@127.0.0.1)1>
 
 6. Check everything works
 
-   (mysample@127.0.0.1)1> application:which_applications().
-   [{mysample_app,[],[]},
-   {sasl,"SASL  CXC 138 11","2.1.9.4"},
-   {stdlib,"ERTS  CXC 138 10","1.17.4"},
-   {kernel,"ERTS  CXC 138 10","2.14.4"}]
-   (mysample@127.0.0.1)2> mysample_server:say_hello().
+   >(mysample@127.0.0.1)1> application:which_applications().
+   >
+   >[{mysample_app,[],[]},
+   >
+   >{sasl,"SASL  CXC 138 11","2.1.9.4"},
+   >
+   >{stdlib,"ERTS  CXC 138 10","1.17.4"},
+   >
+   >{kernel,"ERTS  CXC 138 10","2.14.4"}]
+   >
+   >(mysample@127.0.0.1)2> mysample_server:say_hello().
 
 
 ### Resources:
